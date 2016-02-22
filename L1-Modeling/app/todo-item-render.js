@@ -26,7 +26,7 @@ System.register(["angular2/core"], function(exports_1) {
                 TodoItemRenderer = __decorate([
                     core_1.Component({
                         selector: "todo-item-render",
-                        template: "\n\t    \t<input type='checkbox' (click)='todo.toggle()'>\n    \t\t<span [hidden]=\"todo.status=='completed' \" [contentEditable]=\"todo.status=='started' \">{{todo.title}} </span>\n    \t\t<button (click)='deleteTodo(i)'> X </button> \n\t"
+                        template: "<div>in progress</div>"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], TodoItemRenderer);
@@ -36,4 +36,9 @@ System.register(["angular2/core"], function(exports_1) {
         }
     }
 });
+/*
+                <input type='checkbox' (click)='todo.toggle()'>
+                <span [hidden]="todo.status=='completed' " [contentEditable]="todo.status=='started' ">{{todo.title}} </span>
+                <button (click)='deleteTodo(i)'> X </button>
+*/ 
 //# sourceMappingURL=todo-item-render.js.map
