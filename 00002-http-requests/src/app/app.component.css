@@ -1,0 +1,12 @@
+*{
+	outline: none;
+}
+
+h1{
+	color:red;
+}
+
+.selected{
+	background-color:#333;
+	color:white;
+}
