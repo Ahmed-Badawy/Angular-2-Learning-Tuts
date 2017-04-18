@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
 		// heroes = Hero[];
 
 		selectedHero: Hero;
-  heroes: Hero[];
+    heroes: Hero[];
 
 
 		constructor(private heroService: HeroService){}

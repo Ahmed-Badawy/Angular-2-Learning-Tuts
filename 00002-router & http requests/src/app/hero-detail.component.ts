@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { Hero } from './hero.model';
 
-
 @Component({
   	selector: 'hero-details',
+  	styleUrls: [ './heroes.component.css' ],
+
     template: `
 		  <div *ngIf="selected_hero">
 		    <h2>{{selected_hero.name}} details!</h2>

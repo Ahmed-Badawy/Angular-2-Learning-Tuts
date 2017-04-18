@@ -5,7 +5,7 @@ import { OnInit } from '@angular/core';
 
 
 @Component({
-  selector: 'app-root',
+  selector: 'my-heroes',
   // templateUrl: './app.component.html',
   template: `
   <h1>{{title}}</h1>
@@ -33,14 +33,14 @@ import { OnInit } from '@angular/core';
 })
 
 
-export class AppComponent implements OnInit {
+export class HeroesComponent implements OnInit {
   title = 'Tour of Heroes';
   hero:Hero = { id: 1, name: "Helo 1" };
 		// heroes = HEROES;
 		// heroes = Hero[];
 
 		selectedHero: Hero;
-  heroes: Hero[];
+    heroes: Hero[];
 
 
 		constructor(private heroService: HeroService){}
@@ -65,5 +65,6 @@ export class AppComponent implements OnInit {
 
 
 }
+
 
 
